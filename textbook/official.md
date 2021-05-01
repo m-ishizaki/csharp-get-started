@@ -14,3 +14,17 @@ C# 入門者の方に案内する C# 入門情報のメモです。
 前述のおすすめコンテンツのリンクはチュートリアルがいきなり始まり、一つ終わると続けて二つ目が始まります。  
 その一連のコンテンツの目次ページです。  
 <https://docs.microsoft.com/ja-jp/dotnet/csharp/tour-of-csharp/tutorials/>
+
+# Microsoft Learn
+
+C# 入門用のラーニングパスです。  
+
+[.NET のリスト(検索結果ページ)](https://docs.microsoft.com/ja-jp/learn/browse/?resource_type=learning%20path&expanded=vs%2Cwindows&products=dotnet)  
+
+[C# の最初のステップ](https://docs.microsoft.com/ja-jp/learn/paths/csharp-first-steps/)  
+
+[C# を使用して .NET アプリケーションをビルドする](https://docs.microsoft.com/ja-jp/learn/paths/build-dotnet-applications-csharp/)  
+
+[C# でアプリケーションにロジックを追加する](https://docs.microsoft.com/ja-jp/learn/paths/csharp-logic/)  
+
+[C# でデータを処理する](https://docs.microsoft.com/ja-jp/learn/paths/csharp-data/)  
