@@ -1,4 +1,4 @@
-# 公式憂悶情報
+# 公式入門情報
 
 C# 入門者の方向けの C# 入門情報へのリンクです。  
 
@@ -8,13 +8,13 @@ C# 入門者の方向けの C# 入門情報へのリンクです。
 
 - <https://docs.microsoft.com/ja-jp/dotnet/>
 
-## 最初の一つとしてオススメのコンテンツ
+## 最初にやってみるとしてオススメのコンテンツ
 前述の目次の中から、とりあえず最初にやってみるのにオススメのコンテンツです。  
 サイトの中のエディターに実際にコードを書いて実行することができます。説明に沿ってコードを書いて実行してみましょう。  
 
 - <https://docs.microsoft.com/ja-jp/dotnet/csharp/tour-of-csharp/tutorials/hello-world>
 
-## 最初の一つとしてオススメのコンテンツの目次
+## 最初にやってみるとしてオススメのコンテンツの目次
 前述のおすすめコンテンツのリンクはチュートリアルがいきなり始まり、一つ終わると続けて二つ目が始まります。  
 その一連のコンテンツの目次ページです。  
 
@@ -37,3 +37,7 @@ C# 入門用のラーニングパスは現在、次のものがあります。C#
 - [C# を使用して .NET アプリケーションをビルドする](https://docs.microsoft.com/ja-jp/learn/paths/build-dotnet-applications-csharp/)  
 - [C# でアプリケーションにロジックを追加する](https://docs.microsoft.com/ja-jp/learn/paths/csharp-logic/)  
 - [C# でデータを処理する](https://docs.microsoft.com/ja-jp/learn/paths/csharp-data/)  
+
+<hr />
+
+[目次へ](./textbook.md)
