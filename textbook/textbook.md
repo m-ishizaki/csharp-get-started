@@ -6,13 +6,13 @@
 
 ## 基礎知識
 
-[実行環境]()  
-[開発環境]()  
+[実行環境](./environment.md)  
+[開発環境](./develop-environment.md)  
 [作れるアプリ](./canbecreated.md)  
 
 ## 実践
 
-[環境構築]()  
+[環境構築](./install-sdk.md)  
 [C# でアプリを作る](./practice.md)  
 [各種ハンズオン情報](./handson.md)  
 
