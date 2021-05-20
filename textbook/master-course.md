@@ -10,6 +10,9 @@
 ## C# の機能を手早く確認
 [C＃ 2.0 以降の新機能まとめ (目次)](https://rksoftware.hatenablog.com/entry/2021/04/25/020812)
 
+## Docker コンテナで実行する
+[.NET および Docker の概要](https://docs.microsoft.com/ja-jp/dotnet/core/docker/introduction)  
+
 <hr />
 
 [目次へ](./textbook.md)
