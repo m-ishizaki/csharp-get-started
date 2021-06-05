@@ -22,7 +22,7 @@ Xamarin によるモバイルアプリ作りのハンズオン集です。Xamari
 
 ## Uno Platform
 Uno Platform でクロスプラットフォームのアプリを作って動かしてみるハンズオンです。  
-Uno Platform がどんなものか簡単に体験してみることができます。
+Uno Platform がどんなものか簡単に体験してみることができます。  
 [Uno Platform で Hello world](https://github.com/m-ishizaki/UnoPlatformHelloWorld)
 
 <hr />
