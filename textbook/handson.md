@@ -12,7 +12,7 @@ C# のテストを学べます。プログラムのテストは、ユニット�
 [xUnit.net Hands-on](https://github.com/csharp-tokyo/xUnit-Hands-on)
 
 ## dockerコンテナ・kubernetes
-dockerコンテナ・kubernetes は C# でも当然使えます。しっかし学んでおきましょう。
+dockerコンテナ・kubernetes は C# でも当然使えます。しっかし学んでおきましょう。  
 [C#エンジニアのための dockerコンテナ・kubernetesハンズオン](https://www.katacoda.com/tanaka_733/scenarios/csharp-kubernetes)
 
 ## Xamarin
