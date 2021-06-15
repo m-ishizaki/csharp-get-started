@@ -42,4 +42,4 @@ Windows を使っていてよくわからないという方は、エクスプロ
 
 [次へ >](./textbook01.md)  
 
-[C# でアプリを作るへ](../../textbook/practice.md)
+[[ C# でアプリを作る ] へ](../../textbook/practice.md)
