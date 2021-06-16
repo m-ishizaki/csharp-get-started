@@ -42,9 +42,6 @@ Visual Studio Code のメニューで次のメニューを選択します。
 変更後の launch.json 全体の例です。
 ```json
 {
-    // IntelliSense を使用して利用可能な属性を学べます。
-    // 既存の属性の説明をホバーして表示します。
-    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -82,8 +79,7 @@ Visual Studio Code のメニューで次のメニューを選択します。
 ```
 表示 > エクスプローラー
 ```
-Visual Studio Code の左側にエクスプローラー ペインが開きます。その中から **ConsoleApp** をクリックします。  
-現れるいくつかの選択肢の中から **Program.cs** をクリックします。今クリックしたのが **Program.cs** というファイルで、雛形で作られたプログラムのソースコードが書かれているファイルです。**Program.cs** ファイルが Visual Studio Code のメインの領域で開きます。  
+Visual Studio Code の左側にエクスプローラー ペインが開きます。その中から **ConsoleApp** をクリックします。現れるいくつかの選択肢の中から **Program.cs** をクリックします。すると **Program.cs** というファイルが Visual Studio Code のメインの領域で開きます。この **Program.cs** ファイルが雛形で作られたプログラムのソースコードが書かれているファイルです。  
 
 今回はこのファイルを編集してプログラミングをしていきます。  
 
@@ -153,4 +149,4 @@ namespace ConsoleApp
 
 [< 前へ](./textbook.md) | [次へ >](./textbook02.md)  
 
-[C# でアプリを作るへ](../../textbook/practice.md)
+[[ C# でアプリを作る ] へ](../../textbook/practice.md)
