@@ -86,7 +86,7 @@ suuji
 プログラムでは数値と数字はまったくの別物になるので気を付けましょう。例えば、1 という数値と 2 という数値を足すと 1 + 2 = 3 で 3 という数値になります。しかし、数字の場合は 1 + 2 = 12 と一文字 + 一文字 = 二文字の文字列となりまったくの別物です。
 今回は C# には文字列を数値にするための機能があるのでそれを使っていきます。数字だけが入力されていれば、その入力は数値にできるので簡易的な入力のチェックができます。
 ```cs
-if(!int.TryParse(line, out var input))
+if (!int.TryParse(line, out var input))
 {
     Console.WriteLine("数字を入力してください");
 } else {
@@ -111,6 +111,7 @@ Console.WriteLine("数値が入力されました");
 ```
 が実行されます。```if(...){ } else { }``` はこのように条件によってどちら一方だけを実行したい場合に使える機能です。  
 **※実際には ```else``` がなかったり ```{ }``` がなかったりという使い方が多いので、```if``` については別途しっかり学んでください。**  
+
 **変更後 Program.cs 例**
 ```cs
 using System;
@@ -126,7 +127,7 @@ namespace ConsoleApp
             Console.WriteLine("数字あて");
             var line = Console.ReadLine();
             Console.WriteLine(line);
-            if(!int.TryParse(line, out var input))
+            if (!int.TryParse(line, out var input))
             {
                 Console.WriteLine("数字を入力してください");
             } else {
