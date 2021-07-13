@@ -153,7 +153,6 @@ else if (input < answer2)
 }
 ```
 
-
 <hr />
 
 [< 前へ](./textbook_advanced02.md) | [次へ >](./textbook_advanced04.md)  
