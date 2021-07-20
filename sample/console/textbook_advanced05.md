@@ -98,12 +98,63 @@ cleared2 = Proceed(2, cleared2, answer2, input);
 
 **クラス** を使うと複数のデータとプログラムの処理をひとまとめにして扱うことができるようになります。例えば今回のコードでは、```gameNo```、```cleared```、``` answer``` がゲーム 1 とゲーム 2 用で 2 セット必要になっていますし、それをセットでメソッドに渡すプログラムコードを書く際にミスも起こります。これを **クラス** を使って改善しましょう。
 
+**変更前**
+```cs
+var answer1 = new System.Random().Next(1, 9);
+var answer2 = new System.Random().Next(1, 9);
+var cleared1 = false;
+var cleared2 = false;
+```
+```cs
+while (!cleared1 || !cleared2)
+```
+```cs
+cleared1 = Proceed(1, cleared1, answer1, input);
+cleared2 = Proceed(2, cleared2, answer2, input);
+```
 
+**クラス** を追加します。
+```cs
+internal class Game
+{
+    int _no { get; init; }
+    int _answer { get; init; }
+    public bool Cleared { get; private set; }
 
+    public Game(int no)
+    {
+        _no = no;
+        _answer = new System.Random().Next(1, 9);
+    }
 
+    public void Proceed(int input)
+    {
+        Console.Write($"ゲーム{_no}: ");
+        if (Cleared)
+        {
+            Console.WriteLine("クリア済みです");
+            return;
+        }
+        if (input > _answer)
+        {
+            Console.WriteLine("答えはもっと小さい値です");
+            return;
+        }
+        if (input < _answer)
+        {
+            Console.WriteLine("答えはもっと大きい値です");
+            return;
+        }
+        Console.WriteLine("正解！ クリアです");
+        Cleared = true;
+    }
+}
+```
+
+ゲーム 1、ゲーム 2 の処理をこの **クラス** を使うように変更します。
 
 <hr />
 
-[< 前へ](./textbook_advanced03.md) | [次へ >](./textbook_advanced05.md)  
+[< 前へ](./textbook_advanced04.md) | [次へ >](./textbook_advanced06.md)  
 
 [[ C# でアプリを作る ] へ](../../textbook/practice.md)
