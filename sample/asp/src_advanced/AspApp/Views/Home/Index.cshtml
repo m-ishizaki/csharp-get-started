@@ -1,0 +1,23 @@
+﻿@model AspApp.Models.IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    <form method="post">
+        数字あて<br/>
+        数字を入力してください<br/>
+        <input type="number" name="text" value="@Model.Text"/><br/>
+        <button type="submit">回答</button><br/>
+        <input type="hidden" name="game1.answer" value="@Model.Game1.Answer" />
+        <input type="hidden" name="game2.answer" value="@Model.Game2.Answer" />
+        <input type="hidden" name="game1.cleared" value="@Model.Game1.Cleared.ToString()" />
+        <input type="hidden" name="game2.cleared" value="@Model.Game2.Cleared.ToString()" />
+    </form>
+    <pre>@Model.Message</pre>
+</div>
