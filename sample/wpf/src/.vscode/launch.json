@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/WpfApp/bin/Debug/net6.0-windows/WpfApp.dll",
+            "program": "${workspaceFolder}/WpfApp/bin/Debug/net5.0-windows/WpfApp.dll",
             "args": [],
             "cwd": "${workspaceFolder}/WpfApp",
             "console": "internalConsole",

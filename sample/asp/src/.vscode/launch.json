@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/AspApp/bin/Debug/net6.0/AspApp.dll",
+            "program": "${workspaceFolder}/AspApp/bin/Debug/net5.0/AspApp.dll",
             "args": [],
             "cwd": "${workspaceFolder}/AspApp",
             "stopAtEntry": false,
