@@ -82,6 +82,7 @@ namespace ConsoleApp
 
 **メソッド** を使うとある程度のプログラムの処理をひとまとめにして扱うことができるようになります。わかりやすい例としては、複数回書かれているコードの組を 1 度書くだけで良くなります。例えば今回のコードでは、次の部分が、ゲーム 1 とゲーム 2 用でほぼ同じコードが 2 回書かれています。これを **メソッド** にしてみましょう。  
 
+**変更前**
 ```cs
 if(cleared1)
 {
@@ -147,6 +148,7 @@ bool Proceed(int gameNo, bool cleared, int answer, int input)
 
 ゲーム 1、ゲーム 2 の処理をこの **メソッド** を使うように変更します。
 
+**変更後**
 ```cs
 cleared1 = Proceed(1, cleared1, answer1, input);
 cleared2 = Proceed(2, cleared2, answer2, input);
