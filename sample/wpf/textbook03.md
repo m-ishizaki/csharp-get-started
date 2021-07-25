@@ -64,6 +64,99 @@ class MainWindowViewModel : BaseViewModel
 }
 ```
 
+### ランダムな数字を作る
+
+数字あてゲームのためにはランダムな数字が必要です。  
+次のように書いてランダムな数値を作ります。
+```cs
+_answer = new System.Random().Next(1, 9);
+```
+この 1 行で、1～9 のランダムが数字が作られ ```_answer``` という名前でプログラムの中で使えるようになります。この 1 行を ```AnswerCommand = new Command(OnAnswerCommand);``` の次に追加します。  
+
+この ```_answer``` という名前のランダムで作られた数字はプログラムで表示させることができます。
+```cs
+Message = $"{_answer}";
+```
+この 1 行を ```void OnAnswerCommand(object parameter)``` の次の行の ```{``` の次に追加します。追加した **MainWindow.xaml.cs (の一部)** は次のようになります。  
+```cs
+class MainWindowViewModel : BaseViewModel
+{
+    public Command AnswerCommand { get; }
+    public string Input { get; set; }
+    int _answer;
+    string _message;
+
+    public string Message
+    {
+        get { return _message; }
+        set { SetProperty(ref _message, value); }
+    }
+
+    public MainWindowViewModel()
+    {
+        AnswerCommand = new Command(OnAnswerCommand);
+        _answer = new System.Random().Next(1, 9);
+    }
+
+    void OnAnswerCommand(object parameter)
+    {
+        Message = $"{_answer}";
+    }
+}
+```
+実行し、**[ 回答 ]** ボタンを押すと **[ 回答 ]** ボタンの下に
+```
+{1～9 のランダムな数字}
+```
+が表示されます。
+
+### 文字を入力する
+
+[ 回答 ] ボタンの上のテキスト入力ボックスはプレイヤーがキーボードから文字を入力できます。ここに入力された文字はプログラムコードの ```Input``` と関連付けられています。そのためプログラムコードでは先ほどの ```_answer``` と同じように、 ```Input``` という名前で使えるようになっています。プログラムコードを書き換えて。テキスト入力ボックスへのプレイヤーの入力を画面に表示してみましょう。  
+
+**変更前**
+```cs
+Message = $"{_answer}";
+```
+
+**変更後**  
+```cs
+Message = Input;
+```
+
+コードを変更した **MainWindow.xaml.cs (の一部)** は次のようになります。  
+```cs
+class MainWindowViewModel : BaseViewModel
+{
+    public Command AnswerCommand { get; }
+    public string Input { get; set; }
+    int _answer;
+    string _message;
+
+    public string Message
+    {
+        get { return _message; }
+        set { SetProperty(ref _message, value); }
+    }
+
+    public MainWindowViewModel()
+    {
+        AnswerCommand = new Command(OnAnswerCommand);
+        _answer = new System.Random().Next(1, 9);
+    }
+
+    void OnAnswerCommand(object parameter)
+    {
+        Message = Input;
+    }
+}
+```
+実行するとし、テキスト入力ボックスに、例えばキーボードで **suuji** と打って **[ 回答 ]** ボタンを押してみましょう。
+```
+suuji
+```
+と表示されます。
+
 <hr />
 
 [< 前へ](./textbook02.md) | [次へ >](./textbook04.md)  
