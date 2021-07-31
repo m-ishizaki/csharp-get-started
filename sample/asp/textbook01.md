@@ -1,4 +1,4 @@
-# WPF アプリを作ってみよう
+# ASP[]().NET Core アプリを作ってみよう
 
 ### 雛形を作る
 
@@ -65,7 +65,7 @@ Visual Studio Code の左側にエクスプローラー ペインが開きます
     <form method="post">
         数字あて<br/>
         数字を入力してください<br/>
-        <input type="number" name="text" value="@ViewData["Text"]"/><br/>
+        <input type="text" name="text" value="@ViewData["Text"]"/><br/>
         <button type="submit">回答</button><br/>
         <input type="hidden" name="answer" value="@ViewData["Answer"]" />
     </form>
@@ -100,7 +100,7 @@ Visual Studio Code の左側にエクスプローラー ペインが開きます
     <form method="post">
         数字あて<br/>
         数字を入力してください<br/>
-        <input type="number" name="text" value="@ViewData["Text"]"/><br/>
+        <input type="text" name="text" value="@ViewData["Text"]"/><br/>
         <button type="submit">回答</button><br/>
         <input type="hidden" name="answer" value="@ViewData["Answer"]" />
     </form>
@@ -114,7 +114,7 @@ Visual Studio Code の左側にエクスプローラー ペインが開きます
 
 - ```<br/>```  
 これが書かれた場所で画面に表示されるものが改行されます。
-- ```<input type="number" name="text" value="@ViewData["Text"]"/>```  
+- ```<input type="text" name="text" value="@ViewData["Text"]"/>```  
 画面に文字の入力枠を表示します。ユーザーによる入力が可能です。プログラムで文字を入力することもできます。
 - ```<button type="submit">回答</button>```  
 画面にボタンを表示します。マウスでクリックするなどが行えるボタンです。  

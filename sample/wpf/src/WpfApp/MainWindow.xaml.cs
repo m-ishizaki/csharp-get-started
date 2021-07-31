@@ -116,6 +116,4 @@ namespace WpfApp
             AnswerCommand.SetCanExecute(false);
         }
     }
-
-
 }

@@ -137,26 +137,26 @@ suuji
 ```cs
 if (!int.TryParse(text, out var input))
 {
-    ViewData["Message"] = "数字を入力してください";
+    ViewData["Message"] = $"{text} → 数字を入力してください";
 } else {
-    ViewData["Message"] = "数値が入力されました";
+    ViewData["Message"] = $"{text} → 数値が入力されました";
 }
 ```
 このコードで入力された文字がを数値にしたものが ```input``` という名前で使えるようになります。また数値にできなかった場合は、```if``` と ```else``` の間の
 ```cs
-ViewData["Message"] = "数字を入力してください";
+ViewData["Message"] = $"{text} → 数字を入力してください";
 ```
 が実行されます。この時、```else``` の次の
 ```cs
-ViewData["Message"] = "数値が入力されました";
+ViewData["Message"] = $"{text} → 数値が入力されました";
 ```
 は実行されません。数値にできた場合は、
 ```cs
-ViewData["Message"] = "数字を入力してください";
+ViewData["Message"] = $"{text} → 数字を入力してください";
 ```
 は実行されずに
 ```cs
-ViewData["Message"] = "数値が入力されました";
+ViewData["Message"] = $"{text} → 数値が入力されました";
 ```
 が実行されます。```if(...){ } else { }``` はこのように条件によってどちら一方だけを実行したい場合に使える機能です。  
 **※実際には ```else``` がなかったり ```{ }``` がなかったりという使い方が多いので、```if``` については別途しっかり学んでください。**  
@@ -188,9 +188,9 @@ namespace AspApp.Controllers
             var answer = new System.Random().Next(1, 9);
             if (!int.TryParse(text, out var input))
             {
-                ViewData["Message"] = "数字を入力してください";
+                ViewData["Message"] = $"{text} → 数字を入力してください";
             } else {
-                ViewData["Message"] = "数値が入力されました";
+                ViewData["Message"] = $"{text} → 数値が入力されました";
             }
             return View();
         }
@@ -210,11 +210,11 @@ namespace AspApp.Controllers
 ```
 実行し、テキスト入力ボックスにキーボードで **suuji** と打って **[ 回答 ]** ボタンを押してみましょう。
 ```
-数字を入力してください
+suuji → 数字を入力してください
 ```
 と表示されます。再度実行して今度は **3** と打って **[ 回答 ]** ボタンを押してみましょう。  
 ```
-3
+3 → 数値が入力されました
 ```
 と表示されます。
 <hr />
