@@ -18,7 +18,6 @@ namespace AspApp.Controllers
             _logger = logger;
         }
 
-        //public IActionResult Index(string text, int answer)
         public IActionResult Index(IndexViewModel model)
         {
             if (!model.Game1.HasAnswer() || !model.Game2.HasAnswer())
@@ -40,7 +39,7 @@ namespace AspApp.Controllers
             }
             if (model.Game1.Cleared && model.Game2.Cleared)
             {
-                model.Message += "\nゲームクリア！\n終了するには右上の × ボタンを押してください... ";
+                model.Message += "\nゲームクリア！ ";
             }
             return View(model);
         }
