@@ -2,7 +2,7 @@
 
 ## メソッドを使ったプログラムコード
 
-ひとまず、**メソッド** を使ったプログラムコード (一部) が出来上がりました。現在のプログラムコードは次のようになっています。  
+ひとまず、**メソッド** を使ったプログラムコードが出来上がりました。現在のプログラムコード  (一部) は次のようになっています。  
 
 ```cs
 class MainWindowViewModel : BaseViewModel
@@ -82,7 +82,7 @@ class MainWindowViewModel : BaseViewModel
 
 ## まだ大きな書き間違えリスクが存在
 
-**メソッド** でコードを整理しましたが、まだ書き換えやゲームを増やす際にミスをする大きなリスクが残っています。それが、```cleared1 = Proceed(1, cleared1, answer1, input);``` の ```cleared1 =```、```1, cleared1, answer1,``` の部分です。  
+**メソッド** でコードを整理しましたが、まだ書き換えやゲームを増やす際にミスをする大きなリスクが残っています。それが、```(_cleared1, message1) = Proceed(1, _cleared1, _answer1, _input);``` の ```_cleared1 =```、```1, _cleared1, _answer1,``` の部分です。  
 ゲームを 3 つに増やすそうと思ったら
 ```cs
 (_cleared1, message1) = Proceed(1, _cleared1, _answer1, input);
