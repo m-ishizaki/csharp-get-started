@@ -111,7 +111,8 @@ else if (input > _answer1)
 else if (input < _answer1)
 {
     Message += $"{input} → ゲーム1: 答えはもっと大きい値です";
-}```
+}
+```
 **変更後**
 ```cs
 Message = "";
